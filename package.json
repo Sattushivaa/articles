@@ -1,0 +1,11 @@
+{
+  "name": "fullstack-express-react",
+  "private": true,
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "npm install --prefix frontend && npm run build --prefix frontend",
+    "start": "npm install --prefix server && npm start --prefix server"
+  }
+}
