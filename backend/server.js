@@ -13,7 +13,7 @@ mongoose.connect(process.env.MONGO_URL);
 const app = express();
 app.use(express.static(path.join(__dirname,"../frontend/dist")));
 app.use(express.json());
-app.route("/api/user", userRouter);
+app.use("/api/user", userRouter);
 
 
 app.get("*",(req,res)=>{
