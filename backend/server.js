@@ -2,6 +2,10 @@ import express from "express";
 import mongoose from "mongoose";
 import path from "path";
 import userRouter from "./routes/user.js"
+import { fileURLToPath } from "url";
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 const PORT = process.env.PORT || 8000;
 mongoose.connect(process.env.MONGO_URL);
