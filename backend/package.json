@@ -13,6 +13,8 @@
   "dependencies": {
     "express": "^4.19.2",
     "path": "^0.12.7",
-    "mongoose": "^8.0.0"
+    "mongoose": "^8.0.0",
+    "bcrypt": "^5.x.x",
+    "jsonwebtoken": "^9.x.x"
   }
 }

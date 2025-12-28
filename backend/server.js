@@ -11,8 +11,13 @@ const PORT = process.env.PORT || 8000;
 mongoose.connect(process.env.MONGO_URL);
 
 const app = express();
+
 app.use(express.static(path.join(__dirname,"../frontend/dist")));
+
 app.use(express.json());
+app.use(express.urlencoded({extended:true}));
+// extended maked the nested objects parsing possible
+
 app.use("/api/user", userRouter);
 
 
