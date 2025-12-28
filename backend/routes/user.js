@@ -47,10 +47,14 @@ userRouter.post('/login',async (req,res)=>{
       message : "invalid password"
     });
   }
+  const token = jwt.sign({user_id:user.user_id}, process.env.JWT_SECRET);
+  res.cookie('auth',token, {
+    httpOnly : true,
+    sameSite : "lax"
+  })
   res.json({
     error : false,
-    message : "login successful",
-    token : jwt.sign({user_id:user.user_id}, process.env.JWT_SECRET)
+    message : "login successful"
   })
 })
 
