@@ -11,10 +11,11 @@
     "start": "node server.js"
   },
   "dependencies": {
-    "express": "^4.19.2",
-    "path": "^0.12.7",
-    "mongoose": "^8.0.0",
     "bcrypt": "^5.x.x",
-    "jsonwebtoken": "^9.x.x"
+    "cookie-parser": "^1.4.7",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.x.x",
+    "mongoose": "^8.0.0",
+    "path": "^0.12.7"
   }
 }

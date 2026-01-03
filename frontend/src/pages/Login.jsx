@@ -24,7 +24,7 @@ export default function Login(){
           })
         }).then(t=>t.json()).then(o=>{
           if(!o.error){
-            Navigate('/');
+            Navigate('/dashboard');
           } else {
             alert('something is wrong');
           }

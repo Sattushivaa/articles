@@ -1,0 +1,23 @@
+.menu {
+    padding: 10px 20px;
+    cursor: pointer;
+    background: #2C3AAE;
+    color: white;
+}
+.menu > .dropdown {
+    position: fixed;
+    display: none;
+    background: #2C3AAE;
+    margin-top: 10px;
+    margin-left: -20px;
+}
+.menu > .dropdown > .item {
+    padding: 10px 20px;
+    border-top: 0.1px solid #606060;
+}
+.menu:hover {
+    background: #3C4EE0;
+}
+.menu:hover > .dropdown {
+    display: block;
+}

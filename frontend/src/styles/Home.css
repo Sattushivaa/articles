@@ -1,0 +1,77 @@
+.big {
+    font-size: 3em;
+    font-family: vintage;
+}
+.medium {
+    font-style: italic;
+    font-size : 1.3em;
+}
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    padding: 10px;
+    margin: 20px;
+}
+.card {
+    /* border: 2px solid #FFFFFF12; */
+    background: #FFFFFF24;
+    border-radius: 20px;
+    padding: 10px;
+    width: 80%;
+    backdrop-filter: blur(4px);
+    border-top: 1px solid #FFFFFF4A;
+    border-left: 1px solid #FFFFFF4A;
+    /* z-index: 1; */
+}
+.container:nth-child(even) {
+    display: flex;
+    justify-content: right;
+}
+.content {
+    padding: 10px;
+    color: #FFFFFF;
+}
+.line {
+    height: 120vh;
+    position: fixed;
+    width: 5px;
+    background: gold;
+    left: 50vw;
+    z-index: -1;
+}
+.center {
+    display: flex;
+    justify-content: center;
+}
+.signup {
+    padding: 10px 20px;
+    font-size: 1.5em;
+    font-weight: 1000;
+    background: #2D39BE;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    margin: 10px;
+    width: min(80%,400px);
+}
+.login {
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 10px;
+    border: none;
+    font-weight: 1000;
+    font-size: 1.5em;
+    width: min(80%,400px);
+}
+
+@media screen and (min-width: 600px) {
+    main {
+        align-items: center;
+    }
+    .container {
+        width: 70%;
+    }
+}

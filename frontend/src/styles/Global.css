@@ -1,0 +1,53 @@
+@font-face {
+    font-family: vintage;
+    src: url(./VintageBrush.ttf);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+body {
+    background: #00021A;
+}
+*,H1,H2,H3,H4 {
+    font-family: sans-serif;
+}
+#root {
+    min-height: 100vh;
+    margin: 0;
+}
+#root {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+main {
+    min-width: 0;
+}
+footer,header {
+    min-height: 70px;
+    background: #2D39BE;
+    background-attachment: fixed;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 11px;
+    border-top: 0.1px solid #606060;
+    border-bottom: 0.1px solid #606060;
+}
+header {
+    padding: 20px;
+    min-height: unset;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+header .brand {
+    font-size: 2em;
+    font-weight: 1000;
+    font-family: sans-serif;
+}

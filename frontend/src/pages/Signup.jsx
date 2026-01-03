@@ -1,4 +1,8 @@
+import { useNavigate } from 'react-router-dom'
+
 export default function Signup(){
+  const Navigate = useNavigate();
+  
   return (<>
     <h1>Signup</h1>
     <form method="POST" action="./api/user/signup">
