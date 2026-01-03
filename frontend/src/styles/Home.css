@@ -43,8 +43,12 @@ main {
     z-index: -1;
 }
 .center {
-    display: flex;
-    justify-content: center;
+    min-width: 100%;
+}
+.center>div>button {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 }
 .signup {
     padding: 10px 20px;
@@ -57,7 +61,7 @@ main {
     margin: 10px;
     width: min(80%,400px);
 }
-.login {
+button.login {
     padding: 10px 20px;
     margin: 10px;
     border-radius: 10px;

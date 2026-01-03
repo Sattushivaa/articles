@@ -5,6 +5,7 @@ import userRouter from "./routes/user.js"
 import cookieParser from "cookie-parser";
 import { fileURLToPath } from "url";
 import authMiddleware from './middlewares/auth.js'
+import articleRouter from "./routes/article.js";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -23,6 +24,7 @@ app.use(cookieParser());
 //app.use(authMiddleware());
 
 app.use("/api/user", userRouter);
+app.use("/api/articles", authMiddleware, articleRouter);
 
 if (process.env.NODE_ENV == "production") {
   app.use(express.static(path.join(__dirname, "../frontend/dist")));

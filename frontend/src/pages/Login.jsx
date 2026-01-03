@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
+import '../styles/Login.css'
 
 export default function Login(){
   const Navigate = useNavigate();
@@ -7,11 +8,11 @@ export default function Login(){
   let [pass,setpass] = useState('');
   
   return (<>
-    <h1>Login</h1>
+    <h1 className='lg-h1'>Login</h1>
     <form>
       <input type="text" name="user_id" placeholder="user id" value={id} onChange={(e)=>setid(e.target.value)}/>
       <input type="password" name="password" placeholder="password" value={pass} onChange={(e)=>setpass(e.target.value)}/>
-      <button type="submit" onClick={(e)=>{
+      <button className='login' type="submit" onClick={(e)=>{
         e.preventDefault();
         fetch('/api/user/login',{
           method : 'POST',

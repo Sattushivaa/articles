@@ -36,7 +36,7 @@ export default function Home () {
     <br /><br/>
   <div className="center">
     <div>
-    <button onClick={()=>{Navigate("/signup")}} className="signup">Start Today</button>
+    <button onClick={()=>{Navigate("/signup")}} className="signup">Start Today</button> <br />
     <button onClick={()=>{Navigate("/login")}} className="login">Login</button>
     </div>
   </div>
