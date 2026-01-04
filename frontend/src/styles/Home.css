@@ -1,21 +1,23 @@
-.big {
+.hp-big {
     font-size: 3em;
     font-family: vintage;
 }
-.medium {
+.hp-medium {
     font-style: italic;
-    font-size : 1.3em;
+    font-size : 1.hp-3em;
 }
-main {
+/* main {
     display: flex;
     flex-direction: column;
-}
+} */
 
-.container {
+.hp-container {
     padding: 10px;
     margin: 20px;
+    margin-left: auto;
+    margin-right: auto;
 }
-.card {
+.hp-card {
     /* border: 2px solid #FFFFFF12; */
     background: #FFFFFF24;
     border-radius: 20px;
@@ -26,31 +28,32 @@ main {
     border-left: 1px solid #FFFFFF4A;
     /* z-index: 1; */
 }
-.container:nth-child(even) {
+.hp-container:nth-child(even) {
     display: flex;
     justify-content: right;
 }
-.content {
+.hp-content {
     padding: 10px;
     color: #FFFFFF;
 }
-.line {
+.hp-line {
     height: 120vh;
     position: fixed;
     width: 5px;
     background: gold;
     left: 50vw;
     z-index: -1;
+    top: 0;
 }
-.center {
+.hp-center {
     min-width: 100%;
 }
-.center>div>button {
+.hp-center>div>button {
     margin-left: auto;
     margin-right: auto;
     display: block;
 }
-.signup {
+.hp-signup {
     padding: 10px 20px;
     font-size: 1.5em;
     font-weight: 1000;
@@ -61,7 +64,7 @@ main {
     margin: 10px;
     width: min(80%,400px);
 }
-button.login {
+button.hp-login {
     padding: 10px 20px;
     margin: 10px;
     border-radius: 10px;
@@ -72,10 +75,7 @@ button.login {
 }
 
 @media screen and (min-width: 600px) {
-    main {
-        align-items: center;
-    }
-    .container {
+    .hp-container {
         width: 70%;
     }
 }

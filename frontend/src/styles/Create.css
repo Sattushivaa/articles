@@ -1,0 +1,78 @@
+.cp {
+    color: white;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: 't t t t t t t w'
+                         'e e e e e e e e';
+}
+.cp .wrapper {
+    color: black;
+    background-color: #c0c0c0;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px; 
+    pointer-events: auto;
+    padding: 10px;
+    overflow-x: hidden;
+    overflow-y: visible;
+    background-color: rgb(235, 235, 235);
+    padding-top: 0;
+    grid-area: e;
+}
+.cp .ql-editor {
+    min-height: 50vh;
+}
+/* .ql-tooltip {
+    position: fixed !important;
+    display: flex !important;
+    bottom: 0 !important;
+    padding: 2px !important;
+    transform: none !important;
+    background-color: #c0c0c0 !important;
+    top: unset !important;
+    padding-right: 10px !important;
+    overflow-x: scroll;
+} */
+.cp .ql-tooltip  {
+    max-width: 100vw !important;
+    overflow: scroll !important;
+}
+.cp .name {
+    padding: 10px;
+    grid-area: t;
+    padding-bottom: 0%;
+}
+.cp .name input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1.2em;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid black;
+    border-radius: 20px;
+    margin: 0;
+}
+.cp .pub-wrapper {
+    padding: 10px;
+    grid-area: w;
+}
+.cp .pub-wrapper button {
+    padding: 10px 20px;
+    background-color: #5ca674;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1em;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+}
+@media screen and (max-width:600px) {
+    .cp {
+        grid-template-rows: auto auto 1fr auto;
+        grid-template-areas: 't t t t t t t t'
+                            'e e e e e e e e'
+                            'f f f f f f f w'
+    }
+    
+}

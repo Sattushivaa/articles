@@ -15,35 +15,35 @@ export default function Home () {
   return (
     <>
     
-    <div className="container">
-      <div className="card">
-        <div className="content">
-         <span className="medium"> A place for people who write — not to impress an algorithm, but </span><br />
-       <br /><span className="big"> to express thoughts</span><br /><br />. Here, articles, poems, and stories live for readers who actually care. Whether you write often or only when something inside you demands words, this platform gives your writing a home.
+    <div className="hp-container">
+      <div className="hp-card">
+        <div className="hp-content">
+         <span className="hp-medium"> A place for people who write — not to impress an algorithm, but </span><br />
+       <br /><span className="hp-big"> to express thoughts</span><br /><br />. Here, articles, poems, and stories live for readers who actually care. Whether you write often or only when something inside you demands words, this platform gives your writing a home.
         </div>
       </div>
     </div>
     
-    <div className="container">
-      <div className="card">
-        <div className="content">
-         <span className="medium"> Most platforms reward noise. This one </span><br />
-       <br /><span className="big">rewards meaning</span><br /><br />. Follow writers you resonate with, subscribe to their work, and read without distractions
+    <div className="hp-container">
+      <div className="hp-card">
+        <div className="hp-content">
+         <span className="hp-medium"> Most platforms reward noise. This one </span><br />
+       <br /><span className="hp-big">rewards meaning</span><br /><br />. Follow writers you resonate with, subscribe to their work, and read without distractions
         </div>
       </div>
     </div>
     
     <br /><br/>
-  <div className="center">
+  <div className="hp-center">
     <div>
-    <button onClick={()=>{Navigate("/signup")}} className="signup">Start Today</button> <br />
-    <button onClick={()=>{Navigate("/login")}} className="login">Login</button>
+    <button onClick={()=>{Navigate("/signup")}} className="hp-signup">Start Today</button> <br />
+    <button onClick={()=>{Navigate("/login")}} className="hp-login">Login</button>
     </div>
   </div>
     <br /><br />
     
   <br /><br />
-  <div className="line"></div>
+  <div className="hp-line"></div>
 
     </>
   )

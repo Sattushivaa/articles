@@ -1,31 +1,66 @@
-.dash {
+.dp-dash {
     color: white;
 }
-.layout {
+.dp-layout {
     display: grid;
     padding: 10px;
     width: 60vw;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-auto-rows: 100px;
     grid-gap: 10px;
+    margin-left: auto;
+    margin-right: auto;
 }
-.layout > div {
-    border-radius: 20px;
+.dp-layout > div {
+    border-radius: 5px;
     padding: 10px;
     background-color: rgba(255, 255, 255, 0.138);
 }
-.works {
+.dp-works {
     padding: 10px;
     grid-row: span 4;
 }
-.recents {
+.dp-works-ribbon {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.dp-works-ribbon h3 {
+    display: inline;
+}
+.dp-works-create-new {
+    display: flex;
+    vertical-align: middle;
+    margin-right: 5px;
+    padding: 0px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(142, 142, 142);
+    overflow: hidden;
+    padding-left: 5px;
+    font-size: 1em;
+}
+.dp-text {
+    margin-left: 5px;
+    background-color: thistle;
+    padding-right: 5px;
+    padding-left: 4px;
+}
+.dp-works-ribbon {
+    background-color: rgba(0, 0, 0, 0.218);
+    padding: 5px;
+    border-radius: 3px;
+    margin: -10px -10px 5px -10px;
+    /* margin-bottom: 5px; */
+}
+.dp-recents {
     grid-row: span 4;
 }
-.subscriptions {
+.dp-subscriptions {
     grid-column: 1/-1;
 }
 @media screen and (max-width:600px) {
-    .layout {
+    .dp-layout {
         width: 100vw;
     }
 }

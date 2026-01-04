@@ -1,6 +1,7 @@
 import { useNavigate } from "react-router-dom"
 import "../styles/Dashboard.css"
 import { useEffect } from "react";
+import { CgAdd } from "react-icons/cg";
 
 export default function Dashboard() {
   const Navigate = useNavigate();
@@ -10,16 +11,20 @@ export default function Dashboard() {
   return (
     <>
     <br/>
-    <div className="dash">
-        <section className="layout">
-            <div className="works">
-                <h2>Your works</h2>
-                <hr />
+    <div className="dp-dash">
+        <section className="dp-layout">
+            <div className="dp-works">
+                <div className="dp-works-ribbon">
+                  <h3>Your works</h3>
+                  <div className="dp-works-actions">
+                    <button className="dp-works-create-new"> <CgAdd />  <span className="dp-text">Add New</span> </button>
+                  </div>
+                </div>
             </div>
-            <div className="recents">
+            <div className="dp-recents">
 recents
             </div>
-            <div className="subscriptions">
+            <div className="dp-subscriptions">
 subs
             </div>
         </section>
