@@ -2,26 +2,27 @@
     color: white;
     display: grid;
     grid-template-rows: auto 1fr auto;
+    grid-gap: 10px;
     grid-template-areas: 't t t t t t t w'
+                         'e e e e e e e e'
                          'e e e e e e e e';
 }
 .cp .wrapper {
-    color: black;
-    background-color: #c0c0c0;
+    background-color: #141414;
     border-radius: 8px;
     padding: 20px;
     margin: 10px; 
     pointer-events: auto;
     padding: 10px;
     overflow-x: hidden;
-    overflow-y: visible;
-    background-color: rgb(235, 235, 235);
-    padding-top: 0;
+    padding-top: 10;
     grid-area: e;
+    height: 1fr;
+    overflow-y: hidden; 
+    margin-top: 0px;
+    min-height: 60vh;
 }
-.cp .ql-editor {
-    min-height: 50vh;
-}
+
 /* .ql-tooltip {
     position: fixed !important;
     display: flex !important;
@@ -33,10 +34,10 @@
     padding-right: 10px !important;
     overflow-x: scroll;
 } */
-.cp .ql-tooltip  {
+/* .cp .ql-tooltip  {
     max-width: 100vw !important;
     overflow: scroll !important;
-}
+} */
 .cp .name {
     padding: 10px;
     grid-area: t;
@@ -75,4 +76,45 @@
                             'f f f f f f f w'
     }
     
+}
+/* Toolbar background */
+.ql-snow.ql-toolbar {
+  background-color: #75c68d;
+}
+
+/* Toolbar buttons */
+.ql-snow .ql-toolbar button {
+  color: #f0f0f0;
+  background-color: white;
+  padding: 10px;
+}
+
+/* Active button */
+.ql-snow .ql-toolbar button.ql-active {
+  background-color: #555;
+}
+
+/* Hover state */
+.ql-snow .ql-toolbar button:hover {
+  background-color: #444;
+}
+
+/* Dropdowns (like header selector) */
+.ql-snow .ql-picker {
+  color: white;
+}
+
+.ql-snow .ql-picker-options {
+  background-color: #2b2b2b;
+  color: black
+}
+
+/* Editor area */
+.ql-snow .ql-editor {
+  background: #2b2b2b;
+  color: #f0f0f0;
+}
+.ql-snow .ql-toolbar button {
+  background-color: white;
+  border: 1px solid #333;
 }

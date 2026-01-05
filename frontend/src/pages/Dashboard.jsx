@@ -17,7 +17,7 @@ export default function Dashboard() {
                 <div className="dp-works-ribbon">
                   <h3>Your works</h3>
                   <div className="dp-works-actions">
-                    <button className="dp-works-create-new"> <CgAdd />  <span className="dp-text">Add New</span> </button>
+                    <button onClick={()=>Navigate("/create")} className="dp-works-create-new"> <CgAdd />  <span className="dp-text">Add New</span> </button>
                   </div>
                 </div>
             </div>
